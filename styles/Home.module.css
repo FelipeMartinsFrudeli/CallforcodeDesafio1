@@ -286,8 +286,14 @@
   display: flex;
 }
 
-.SocialsNetwork .DescriptionCard {
-  padding: 1vh;
+.SocialsNetwork li {
+  margin: 1vh;
+}
+
+.SocialsNetwork link {
+  height: 100%;
+  width: 100%;
+  background-color: #77828E;
 }
 
 @media (max-width: 600px) {

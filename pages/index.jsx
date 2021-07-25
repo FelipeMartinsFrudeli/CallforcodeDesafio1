@@ -114,19 +114,19 @@ export default function Menu() {
       <div className={styles.box1}>
         <a className={styles.titleFooter}><strong>AQUA</strong>LINN</a>
         <ul className={styles.ToolboxFooter}>
-          <li><a href="/Cadastro" className={styles.DescriptionCard}>Cadastre-se</a></li>
-          <li><a href="/Servicos" className={styles.DescriptionCard}>Serviços</a></li>
-          <li><a href="/Blog" className={styles.DescriptionCard}>Blog</a></li>
-          <li><a href="/Patrocione" className={styles.DescriptionCard}>Patrocine um projeto</a></li>
+          <li><link href="/Cadastro"/><a className={styles.DescriptionCard}>Cadastre-se</a></li>
+          <li><link href="/Servicos"/><a className={styles.DescriptionCard}>Serviços</a></li>
+          <li><link href="/Blog"/><a className={styles.DescriptionCard}>Blog</a></li>
+          <li><link href="/Patrocione"/><a className={styles.DescriptionCard}>Patrocine um projeto</a></li>
         </ul>
         <ul className={styles.SocialsNetwork}>
-          <li><a href="/Cadastro" className={styles.DescriptionCard}><Image src={'/FecebookIcon.svg'} height={25} width={25} /></a></li>
-          <li><a href="/Cadastro" className={styles.DescriptionCard}><Image src={'/InstagramIcon.svg'} height={25} width={25} /></a></li>
-          <li><a href="/Cadastro" className={styles.DescriptionCard}><Image src={'/LinkedinIcon.svg'} height={25} width={25} /></a></li>
+          <li><link href="/"/><Image src={'/FecebookIcon.svg'} height={25} width={25} /></li>
+          <li><link href="/"/><Image src={'/InstagramIcon.svg'} height={25} width={25} /></li>
+          <li><link href="/"/><Image src={'/LinkedinIcon.svg'} height={25} width={25} /></li>
         </ul>
       </div>
         
-        
+
       <div className={styles.EmailCard}> 
         <a className={styles.Title}>Fale conosco</a>
         <textarea name="" placeholder="Email" className={styles.DescriptionCard}></textarea>
