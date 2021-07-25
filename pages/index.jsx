@@ -9,7 +9,7 @@ export default function Menu() {
     <div className={styles.container}>
       <link rel="preconnect" href="https://fonts.googleapis.com"/>
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap" rel="stylesheet"/>
       <div className={styles.header}>
         <a><strong>AQUA</strong>LINN</a>
       </div>
@@ -111,7 +111,28 @@ export default function Menu() {
         </div>
       </div>
       <footer className={styles.footer}>
+      <div className={styles.box1}>
+        <a className={styles.titleFooter}><strong>AQUA</strong>LINN</a>
+        <ul className={styles.ToolboxFooter}>
+          <li><a href="/Cadastro" className={styles.DescriptionCard}>Cadastre-se</a></li>
+          <li><a href="/Servicos" className={styles.DescriptionCard}>Serviços</a></li>
+          <li><a href="/Blog" className={styles.DescriptionCard}>Blog</a></li>
+          <li><a href="/Patrocione" className={styles.DescriptionCard}>Patrocine um projeto</a></li>
+        </ul>
+        <ul className={styles.SocialsNetwork}>
+          <li><a href="/Cadastro" className={styles.DescriptionCard}><Image src={'/FecebookIcon.svg'} height={25} width={25} /></a></li>
+          <li><a href="/Cadastro" className={styles.DescriptionCard}><Image src={'/InstagramIcon.svg'} height={25} width={25} /></a></li>
+          <li><a href="/Cadastro" className={styles.DescriptionCard}><Image src={'/LinkedinIcon.svg'} height={25} width={25} /></a></li>
+        </ul>
+      </div>
         
+        
+      <div className={styles.EmailCard}> 
+        <a className={styles.Title}>Fale conosco</a>
+        <textarea name="" placeholder="Email" className={styles.DescriptionCard}></textarea>
+        <textarea name="" placeholder="" rows="5" className={styles.Email}></textarea>
+        <button className={styles.buttonContactEmail}>Enviar</button>
+      </div>
       </footer>
     </div>
   )

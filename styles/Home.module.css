@@ -102,7 +102,7 @@
 
 .BlogList {
   padding-top: 10vh;
-  padding-left: 25vh;
+  padding-left: 20vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -188,6 +188,106 @@
   color: #77828E;
   font-weight: 500;
   padding-left: 30px;
+}
+
+.footer {
+  margin-top: 50vh;
+  width: 100%;
+  background-color: #F2FEFF;
+}
+
+.titleFooter {
+
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #66D9E8;
+  font-size: 1.2rem;
+}
+
+.header {
+  width: 100%;
+  background-color: #F2FEFF;
+  padding: 15px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box1 {
+  padding: 10vh 10vh;
+  padding-left: 20vh;
+}
+
+.footer {
+  display: grid;
+  
+  grid-template-columns: 1fr 1fr;
+}
+
+.EmailCard {
+  display: flex;
+  flex-direction: column;
+  padding: 10vh 10vh;
+}
+
+.EmailCard .Title {
+  color: #77828E;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.EmailCard .DescriptionCard {
+  padding: 0.1vh;
+  width: 60%;
+  border-style:none;
+  font-size: 1.2rem;
+  padding: 2vh 0vh 0vh 2vh;
+  border-radius: 2vh;
+  resize: none;
+  margin: 1vh 0vh;
+}
+
+.ToolboxFooter {
+  padding: 3vh 0vh;
+  font-weight:lighter;
+}
+
+.ToolboxFooter .DescriptionCard a {
+  padding: 01vh;
+
+}
+
+.Email {
+  width: 49.5vh;
+  height: 20vh;
+  padding: 2vh;
+  color: #77828E;
+  font-weight: 400;
+  resize: none;
+}
+
+.buttonContactEmail {
+  margin-top: 20px;
+  width: 150px;
+  height: 40px;
+  text-decoration: none;
+  border: 1px solid #3BC9DB;
+  border-radius: 5px;
+  font-size: 10px;
+  color: #3BC9DB;
+  background: transparent;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-left: 25vh;
+}
+
+.SocialsNetwork {
+  display: flex;
+}
+
+.SocialsNetwork .DescriptionCard {
+  padding: 1vh;
 }
 
 @media (max-width: 600px) {
