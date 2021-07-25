@@ -28,6 +28,7 @@
 }
 
 .bodyText {
+  padding-top: 45vh;
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -89,8 +90,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100%;
-  display: flex;
-  justify-content: center;
+  display: grid;
 
 }
 
