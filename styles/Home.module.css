@@ -16,6 +16,7 @@
   display:flex;
   align-items: center;
   justify-content: center;
+  position: fixed;
 }
 
 .header a {
@@ -52,7 +53,14 @@
   color: #fff;
   background: transparent;
 }
+.bodyText button {
+  border: 0.3vh solid #3BC9DB;
+  width: 40vh;
+  font-weight: 600;
+  font-size: 0.8rem;
+  font-family: 'Poppins';
 
+}
 .apoiadores {
   margin-top: 40px;
 }
@@ -74,22 +82,26 @@
   margin-top: 30px;
 }
 
-.image_top, .image_bottom {
+.image_top {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   background-image: url('../public/image_banner_home.svg');
   background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-size: 100%;
   display: flex;
   justify-content: center;
+
 }
 
 .image_bottom {
   height: 350px;
   background-image: url('../public/image_banner_bottom.svg');
   background-attachment: scroll;
-  margin-top: 20%;
+  width: 100%;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .buttonContact {
@@ -102,9 +114,8 @@
 
 .BlogList {
   padding-top: 10vh;
-  padding-left: 20vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  padding: 10vh 15%;
+  display: flex;
 }
 
 .BlogSection {
@@ -114,10 +125,7 @@
 .BlogCard {
   height: 32vh;
   width: 40vh;
-}
-
-.BlogSection .TitleCard {
-  padding: 10px;
+  margin-right: 5%;
 }
 
 .BlogSection .DescriptionCard {
@@ -142,18 +150,17 @@
 .nossos_servicos {
   margin-top: 40px;
   width: 100%;
-  height: 100px;
 }
 
 .GridCard {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 10px 20%;
+  margin: 2vh 20%;
 }
 
 .Card {
   padding: 20px;
-  width: 150px;
+  width: 40vh;
   font-size: 12px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -197,7 +204,8 @@
 }
 
 .titleFooter {
-
+  
+  margin-top: 10vh;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -215,8 +223,7 @@
 }
 
 .box1 {
-  padding: 10vh 10vh;
-  padding-left: 20vh;
+  padding: 0vh 10vh;
 }
 
 .footer {

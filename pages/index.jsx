@@ -9,7 +9,7 @@ export default function Menu() {
     <div className={styles.container}>
       <link rel="preconnect" href="https://fonts.googleapis.com"/>
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"/>
       <div className={styles.header}>
         <a><strong>AQUA</strong>LINN</a>
       </div>
@@ -17,7 +17,7 @@ export default function Menu() {
         <div className={styles.image_top}>
           <div className={styles.bodyText}>
             <a className={styles.box1}>Água para todos, um projeto que possibilita</a><a className={styles.box2}>que recursos hidricos cheguem até você</a>
-            <button><strong>CHAMADA</strong></button>
+            <button>CHAMADA</button>
           </div>
         </div>
 
