@@ -2,6 +2,8 @@ import React from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 
 export default function Menu() {
@@ -10,9 +12,9 @@ export default function Menu() {
       <link rel="preconnect" href="https://fonts.googleapis.com"/>
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"/>
-      <div className={styles.header}>
-        <a><strong>AQUA</strong>LINN</a>
-      </div>
+      
+      <Header />
+
       <div>
         <div className={styles.image_top}>
           <div className={styles.bodyText}>
@@ -110,30 +112,9 @@ export default function Menu() {
           </ul>
         </div>
       </div>
-      <footer className={styles.footer}>
-      <div className={styles.box1}>
-        <a className={styles.titleFooter}><strong>AQUA</strong>LINN</a>
-        <ul className={styles.ToolboxFooter}>
-          <li><link href="/Cadastro"/><a className={styles.DescriptionCard}>Cadastre-se</a></li>
-          <li><link href="/Servicos"/><a className={styles.DescriptionCard}>Serviços</a></li>
-          <li><link href="/Blog"/><a className={styles.DescriptionCard}>Blog</a></li>
-          <li><link href="/Patrocione"/><a className={styles.DescriptionCard}>Patrocine um projeto</a></li>
-        </ul>
-        <ul className={styles.SocialsNetwork}>
-          <li><link href="/"/><Image src={'/FecebookIcon.svg'} height={25} width={25} /></li>
-          <li><link href="/"/><Image src={'/InstagramIcon.svg'} height={25} width={25} /></li>
-          <li><link href="/"/><Image src={'/LinkedinIcon.svg'} height={25} width={25} /></li>
-        </ul>
-      </div>
-      {/* A JSX comment */}
+      
+      <Footer />
 
-      <div className={styles.EmailCard}> 
-        <a className={styles.Title}>Fale conosco</a>
-        <textarea name="" placeholder="Email" className={styles.DescriptionCard}></textarea>
-        <textarea name="" placeholder="" rows="5" className={styles.Email}></textarea>
-        <button className={styles.buttonContactEmail}>Enviar</button>
-      </div>
-      </footer>
     </div>
   )
 }

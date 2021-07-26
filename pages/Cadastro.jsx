@@ -1,8 +1,9 @@
+import React from 'react';
+import stylesFromIndex from '../styles/Home.module.css';
+import styles from '../styles/Cadastro.module.css';
 
-import stylesFromIndex from '../styles/Home.module.css'
-import styles from '../styles/Cadastro.module.css'
-
-import Image from 'next/image'
+import Footer from '../components/Footer';
+import Header from '../components/Header';
 
 function MyApp({ Component, pageProps }) {
     return (
@@ -10,9 +11,8 @@ function MyApp({ Component, pageProps }) {
           <link rel="preconnect" href="https://fonts.googleapis.com"/>
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
           <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"/>
-          <div className={stylesFromIndex.header}>
-            <a><strong>AQUA</strong>LINN</a>
-          </div>
+          
+          <Header />
 
           <div className={styles.image}></div> 
           <div className={styles.SingUpCard}>
@@ -58,9 +58,9 @@ function MyApp({ Component, pageProps }) {
                 <div>
                   <form action="">
                     <input type="radio" id="html" className={styles.RadioButton} name="fav_language" value="trueButton"/>
-                    <label for="trueButton">Sim</label>
+                    <label htmlFor="trueButton">Sim</label>
                     <input type="radio" id="css" className={styles.RadioButton} name="fav_language" value="falseButton"/>
-                    <label for="falseButton">Não</label>
+                    <label htmlFor="falseButton">Não</label>
                   </form>
                 </div>
               </div>
@@ -73,29 +73,8 @@ function MyApp({ Component, pageProps }) {
                 </label>
               </div>
           </div>
-          <footer className={stylesFromIndex.footer} style={{marginTop:400}}>
-            <div className={stylesFromIndex.box1}>
-              <a className={stylesFromIndex.titleFooter}><strong>AQUA</strong>LINN</a>
-              <ul className={stylesFromIndex.ToolboxFooter}>
-                <li><link href="/Cadastro"/><a className={stylesFromIndex.DescriptionCard}>Cadastre-se</a></li>
-                <li><link href="/Servicos"/><a className={stylesFromIndex.DescriptionCard}>Serviços</a></li>
-                <li><link href="/Blog"/><a className={stylesFromIndex.DescriptionCard}>Blog</a></li>
-                <li><link href="/Patrocione"/><a className={stylesFromIndex.DescriptionCard}>Patrocine um projeto</a></li>
-              </ul>
-              <ul className={stylesFromIndex.SocialsNetwork}>
-                <li><link href="/"/><Image src={'/FecebookIcon.svg'} height={25} width={25} /></li>
-                <li><link href="/"/><Image src={'/InstagramIcon.svg'} height={25} width={25} /></li>
-                <li><link href="/"/><Image src={'/LinkedinIcon.svg'} height={25} width={25} /></li>
-              </ul>
-            </div>
-
-            <div className={stylesFromIndex.EmailCard}> 
-              <a className={stylesFromIndex.Title}>Fale conosco</a>
-              <textarea name="" placeholder="Email" className={stylesFromIndex.DescriptionCard}></textarea>
-              <textarea name="" placeholder="" rows="5" className={stylesFromIndex.Email}></textarea>
-              <button className={stylesFromIndex.buttonContactEmail}>Enviar</button>
-            </div>
-          </footer>
+          
+          <Footer />
       </div>
     )
   }
