@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
             <a><strong>AQUA</strong>LINN</a>
           </div>
 
-          <div className={styles.image}></div>
+          <div className={styles.image}></div> 
           <div className={styles.SingUpCard}>
 
             <div className={styles.title}>Cadastro</div>
