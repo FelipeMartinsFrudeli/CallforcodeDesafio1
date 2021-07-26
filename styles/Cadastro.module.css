@@ -35,10 +35,10 @@
 }
 
 .SingUpCard {
-  width: 100%;
+  width: 85vw;
   background-color: #fff;
   height: 100vh;
-  margin: 10vh 10%;
+  margin: 10vh 0 10vh 5%;
 }
 
 .TextInputBox {
@@ -53,6 +53,10 @@
   font-size: 0.8rem;
   font-family: 'Poppins';
   background-color: #EBEBEB;
+}
+
+.box1, .box2, .box3 {
+  width: 100vw;
 }
 
 .ListInputBox {
@@ -92,7 +96,7 @@
   background-color: #FAF6F6;
   padding: 1vh 5vh 5vh 5vh;
   margin: 10% 0;
-  width: 80%;
+  width: 100%;
 }
 
 .UseTerms .title {

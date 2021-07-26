@@ -55,13 +55,25 @@
   color: #fff;
   background: transparent;
 }
-.bodyText button {
+.bodyText button, .buttonContact  {
   border: 0.3vh solid #3BC9DB;
   width: 40vh;
-  font-weight: 600;
+  font-weight: 300;
   font-size: 0.8rem;
   font-family: 'Poppins';
 }
+
+.bodyText button:hover, .buttonContact:hover {
+  background-color: #3BC9DB;
+  font-weight: 600;
+  transition: 300ms;
+}
+
+.bodyText button:active, .buttonContact:active {
+  
+  background-color: #2c8b97;
+}
+
 .apoiadores {
   margin-top: 40px;
 }
@@ -228,7 +240,7 @@
 
 .footer {
   display: grid;
-  
+  width: 99.5vw;
   grid-template-columns: 1fr 1fr;
 }
 
