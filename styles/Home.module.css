@@ -17,6 +17,7 @@
   align-items: center;
   justify-content: center;
   position: fixed;
+  z-index: 2;
 }
 
 .header a {
@@ -60,7 +61,6 @@
   font-weight: 600;
   font-size: 0.8rem;
   font-family: 'Poppins';
-
 }
 .apoiadores {
   margin-top: 40px;

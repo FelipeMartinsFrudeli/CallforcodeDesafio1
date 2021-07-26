@@ -125,7 +125,7 @@ export default function Menu() {
           <li><link href="/"/><Image src={'/LinkedinIcon.svg'} height={25} width={25} /></li>
         </ul>
       </div>
-        
+      {/* A JSX comment */}
 
       <div className={styles.EmailCard}> 
         <a className={styles.Title}>Fale conosco</a>
